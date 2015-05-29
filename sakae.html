@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+li {
+  display: inline-block;
+  vertical-align: top;
+}
+li img {
+  border: 1px solid #ccc;
+}
+
+  </style>
+</head>
+
+<body>
+<h1>ようこそプロレス愛好会のホームページへ</h1>
+<p class="text">ここを見てる人はプロレスが大好きな人です。</p>
+<h2>WWE選手名鑑</h2>
+<ul>
+  <li><img src="http://www.wwe.co.jp/files/SuperStar/Sethrollins/sethrollins_1_full_20140623.png" alt="セス・ロリンズ"></li>
+  <li><img src="http://www.wwe.co.jp/files/SuperStar/KurtAngle/KurtAngle_full.png" alt="カート・アングル"></li>
+  <li><img src="http://www.wwe.co.jp/files/test/dummy_star_0.png" alt="ザ・ロック"></li>
+</ul>
+</body>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script>
+  // $().each(object, callback)
+  //配列/オブジェクトを問わずに汎用的に用いることができる、繰り返し処理用の関数です。
+  $('li img').each(function(){
+    console.log($('li:nth-of-type(3) img').attr('alt'));
+  });
+</script>
+</html>
